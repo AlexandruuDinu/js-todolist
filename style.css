@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(120deg, #fdc830, #f37335);
+  color: white;
+  font-family: "Poppoins", sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 1.2rem;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: #fff;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 5px 0px 0px 5px;
+  outline: none;
+}
+
+form button {
+  color: #f37335;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 0px 5px 5px 0px;
+}
+
+form button:hover {
+  background: #f37335;
+  color: #fff;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo {
+  margin: 0.5rem;
+  background: #fff;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+}
+
+.todo li {
+  flex: 1;
+}
+
+.trash-btn,
+.complete-btn {
+  background: #4bf03c;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.trash-btn {
+  background: #ff4c29;
+}
+
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+
+.fa-trash {
+  pointer-events: none;
+}
+
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
